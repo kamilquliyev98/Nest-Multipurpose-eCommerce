@@ -1,0 +1,2400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nest - Shop</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon/favicon.svg" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- IcoFont -->
+    <link rel="stylesheet" href="assets/fonts/icofont/icofont.min.css">
+
+    <!-- Flaticon uicons CSS -->
+    <link rel="stylesheet" href="assets/fonts/uicons/uicons-regular-straight.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+
+    <!-- AOS Plugin CSS -->
+    <link rel="stylesheet" href="assets/aos-master/dist/aos.css">
+
+    <!-- Slick Plugin CSS -->
+    <!-- <link rel="stylesheet" href="assets/slick/slick/slick.css"> -->
+    <!-- <link rel="stylesheet" href="assets/slick/slick/slick-theme.css"> -->
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="overlay-header"></div>
+
+    <div class="sidebar">
+        <div class="sidebar-inner">
+            <div class="top">
+                <div class="logo">
+                    <img src="assets/images/logo/logo.svg" alt="logo">
+                </div>
+                <div class="close" id="btn-close-navbar">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="search">
+                    <input type="text" placeholder="Search for items...">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="sidebar-menu">
+                    <nav>
+                        <ul class="navigation">
+                            <li class="nav-item">
+                                <i class="fa-solid fa-angle-down"></i>
+                                <a href="index.html">Home</a>
+                                <ul class="dropdown">
+                                    <li><a href="#">Home 1</a></li>
+                                    <li><a href="#">Home 2</a></li>
+                                    <li><a href="#">Home 3</a></li>
+                                    <li><a href="#">Home 4</a></li>
+                                    <li><a href="#">Home 5</a></li>
+                                    <li><a href="index.html">Home 6</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <i class="fa-solid fa-angle-down"></i>
+                                <a href="shop.html">Shop</a>
+                                <ul class="dropdown">
+                                    <li><a href="#">Shop Grid - Right Sidebar</a></li>
+                                    <li><a href="#">Shop Grid - Left Sidebar</a></li>
+                                    <li><a href="#">Shop List - Right Sidebar</a></li>
+                                    <li><a href="#">Shop List - Left Sidebar</a></li>
+                                    <li><a href="shop.html">Shop - Wide</a></li>
+                                    <li>
+                                        <i class="fa-solid fa-angle-down"></i>
+                                        <a href="shop-product.html">Single Product</a>
+                                        <ul class="dropdown">
+                                            <li><a href="#">Product - Right Sidebar</a></li>
+                                            <li><a href="#">Product - Left Sidebar</a></li>
+                                            <li><a href="#">Product - No Sidebar</a></li>
+                                            <li><a href="#">Product - Vendor Info</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Shop - Filter</a></li>
+                                    <li><a href="#">Shop - Wishlist</a></li>
+                                    <li><a href="cart.html">Shop - Cart</a></li>
+                                    <li><a href="#">Shop - Checkout</a></li>
+                                    <li><a href="#">Shop - Compare</a></li>
+                                    <li>
+                                        <i class="fa-solid fa-angle-down"></i>
+                                        <a href="#">Shop Invoice</a>
+                                        <ul class="dropdown">
+                                            <li><a href="#">Shop Invoice 1</a></li>
+                                            <li><a href="#">Shop Invoice 2</a></li>
+                                            <li><a href="#">Shop Invoice 3</a></li>
+                                            <li><a href="#">Shop Invoice 4</a></li>
+                                            <li><a href="#">Shop Invoice 5</a></li>
+                                            <li><a href="#">Shop Invoice 6</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <i class="fa-solid fa-angle-down"></i>
+                                <a href="#">Vendors</a>
+                                <ul class="dropdown">
+                                    <li><a href="#">Vendors Grid</a></li>
+                                    <li><a href="#">Vendors List</a></li>
+                                    <li><a href="#">Vendor Details 01</a></li>
+                                    <li><a href="#">Vendor Details 02</a></li>
+                                    <li><a href="#">Vendor Dashboard</a></li>
+                                    <li><a href="#">Vendor Guide</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <i class="fa-solid fa-angle-down"></i>
+                                <a href="#">Mega Menu</a>
+                                <ul class="dropdown">
+                                    <li>
+                                        <i class="fa-solid fa-angle-down"></i>
+                                        <a href="#">Women's Fashion</a>
+                                        <ul class="dropdown">
+                                            <li><a href="#">Dresses</a></li>
+                                            <li><a href="#">Blouses & Shirts</a></li>
+                                            <li><a href="#">Hoodies & Sweatshirts</a></li>
+                                            <li><a href="#">Women's Sets</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-angle-down"></i>
+                                        <a href="#">Men's Fashion</a>
+                                        <ul class="dropdown">
+                                            <li><a href="#">Jackets</a></li>
+                                            <li><a href="#">Casual Faux Leather</a></li>
+                                            <li><a href="#">Genuine Leather</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-angle-down"></i>
+                                        <a href="#">Technology</a>
+                                        <ul class="dropdown">
+                                            <li><a href="#">Gaming Laptops</a></li>
+                                            <li><a href="#">Ultraslim Laptops</a></li>
+                                            <li><a href="#">Tablets</a></li>
+                                            <li><a href="#">Laptop Accessories</a></li>
+                                            <li><a href="#">Tablet Accessories</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <i class="fa-solid fa-angle-down"></i>
+                                <a href="#">Blog</a>
+                                <ul class="dropdown">
+                                    <li><a href="#">Blog Category Grid</a></li>
+                                    <li><a href="#">Blog Category List</a></li>
+                                    <li><a href="#">Blog Category Big</a></li>
+                                    <li><a href="#">Blog Category Wide</a></li>
+                                    <li>
+                                        <i class="fa-solid fa-angle-down"></i>
+                                        <a href="#">Single Product Layout</a>
+                                        <ul class="dropdown">
+                                            <li><a href="#">Left Sidebar</a></li>
+                                            <li><a href="#">Right Sidebar</a></li>
+                                            <li><a href="#">No Sidebar</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <i class="fa-solid fa-angle-down"></i>
+                                <a href="#">Pages</a>
+                                <ul class="dropdown">
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="#">My Account</a></li>
+                                    <li><a href="#">Login</a></li>
+                                    <li><a href="#">Register</a></li>
+                                    <li><a href="#">Purchase Guide</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Terms of Service</a></li>
+                                    <li><a href="#">404 Page</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <i class="fa-solid fa-angle-down"></i>
+                                <a href="#">Language</a>
+                                <ul class="dropdown">
+                                    <li><a href="#">English</a></li>
+                                    <li><a href="#">French</a></li>
+                                    <li><a href="#">German</a></li>
+                                    <li><a href="#">Spanish</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="info">
+                    <a href="#">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Our location
+                    </a>
+                    <a href="#">
+                        <i class="fa-regular fa-user"></i>
+                        Log In / Sign Up
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-headphones"></i>
+                        (+01) - 2345 - 6789
+                    </a>
+                </div>
+                <div class="socials">
+                    <h6>Follow Us</h6>
+                    <a href="#">
+                        <img src="assets/images/theme/icons/icon-facebook-white.svg" alt="facebook">
+                    </a>
+                    <a href="#">
+                        <img src="assets/images/theme/icons/icon-twitter-white.svg" alt="twitter">
+                    </a>
+                    <a href="#">
+                        <img src="assets/images/theme/icons/icon-instagram-white.svg" alt="instagram">
+                    </a>
+                    <a href="#">
+                        <img src="assets/images/theme/icons/icon-pinterest-white.svg" alt="pinterest">
+                    </a>
+                    <a href="#">
+                        <img src="assets/images/theme/icons/icon-youtube-white.svg" alt="youtube">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="mobile-header">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+
+                <div class="col-2">
+                    <div class="navbar-collapse-button" id="btn-open-navbar">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+
+                <div class="col-8">
+                    <div class="logo">
+                        <img src="assets/images/logo/logo.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="col-2">
+                    <div class="header-actions-2">
+                        <div class="header-action">
+                            <a href="#">
+                                <img src="assets/images/theme/icons/icon-heart.svg" alt="wishlist">
+                                <span>2</span>
+                            </a>
+                        </div>
+                        <div class="header-action">
+                            <a href="cart.html">
+                                <img src="assets/images/theme/icons/icon-cart.svg" alt="wishlist">
+                                <span>2</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="header-middle d-none d-lg-block">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+
+                    <div class="col-lg-2">
+                        <div class="header-logo">
+                            <a href="index.html">
+                                <img src="assets/images/logo/logo.svg" alt="logo">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="search-section">
+                            <form action="#">
+                                <div class="search-box">
+                                    <input type="text" placeholder="Search for items...">
+                                    <i class="icofont-search-1"></i>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="header-actions">
+
+                            <div class="header-action">
+                                <a href="#">
+                                    <div>
+                                        <img src="assets/images/theme/icons/icon-compare.svg" alt="compare">
+                                        <span>3</span>
+                                    </div>
+                                    <p>Compare</p>
+                                </a>
+                            </div>
+
+                            <div class="header-action">
+                                <a href="#">
+                                    <div>
+                                        <img src="assets/images/theme/icons/icon-heart.svg" alt="wishlist">
+                                        <span>6</span>
+                                    </div>
+                                    <p>Wishlist</p>
+                                </a>
+                            </div>
+
+                            <div class="header-action">
+                                <a href="cart.html">
+                                    <div>
+                                        <img src="assets/images/theme/icons/icon-cart.svg" alt="cart">
+                                        <span>2</span>
+                                    </div>
+                                    <p>Cart</p>
+                                </a>
+                            </div>
+
+                            <div class="header-action">
+                                <div class="dropdown account-hover">
+                                    <a href="#">
+                                        <div>
+                                            <img src="assets/images/theme/icons/icon-user.svg" alt="user">
+                                        </div>
+                                        <p>Account</p>
+                                    </a>
+                                    <div class="dropdown-content account-dropdown">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fi fi-rs-user"></i>
+                                                    <span>My Account</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fi fi-rs-location-alt"></i>
+                                                    <span>Order Tracking</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fi fi-rs-label"></i>
+                                                    <span>My Voucher</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fi fi-rs-heart"></i>
+                                                    <span>My Wishlist</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fi fi-rs-settings-sliders"></i>
+                                                    <span>Setting</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fi fi-rs-sign-out"></i>
+                                                    <span>Sign out</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-bottom-2 d-none d-lg-block">
+
+            <div class="trending-categories d-none d-lg-block">
+                <a href="#">
+                    <i class="fi-rs-apps"></i>
+                    <span>Browse All Categories</span>
+                    <i class="fi-rs-angle-down"></i>
+                </a>
+            </div>
+
+            <div class="header-menu">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="shop.html" class="active">Shop</a>
+                        </li>
+                        <li>
+                            <a href="#">Mega menu</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="hotline">
+                <div class="hotline-icon">
+                    <img src="assets/images/theme/icons/icon-headphone.svg" alt="hotline">
+                </div>
+                <div class="hotline-call">
+                    <p>1900 - 888</p>
+                    <span>24/7 Support Center</span>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <section id="shop-page-header">
+        <div class="container-fluid">
+            <div class="page-header">
+                <div class="row align-items-center">
+                    <div class="col-xl-3 col-12">
+                        <h1>Snack</h1>
+                        <div class="breadcrumb">
+                            <a href="index.html">
+                                <i class="fi-rs-home ms-0 me-1"></i>
+                                <span>Home</span>
+                            </a>
+                            <i class="fa-solid fa-angle-right"></i>
+                            <span>Shop</span>
+                            <i class="fa-solid fa-angle-right"></i>
+                            <span>Snack</span>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 d-none d-lg-block">
+                        <div class="tags-list-section">
+                            <ul class="tags-list">
+                                <li class="hover-up">
+                                    <a href="#">
+                                        <i class="fi-rs-cross me-10"></i>
+                                        <span>Cabbage</span>
+                                    </a>
+                                </li>
+                                <li class="hover-up">
+                                    <a href="#" class="selected-tag">
+                                        <i class="fi-rs-cross me-10"></i>
+                                        <span>Broccoli</span>
+                                    </a>
+                                </li>
+                                <li class="hover-up">
+                                    <a href="#">
+                                        <i class="fi-rs-cross me-10"></i>
+                                        <span>Artichoke</span>
+                                    </a>
+                                </li>
+                                <li class="hover-up">
+                                    <a href="#">
+                                        <i class="fi-rs-cross me-10"></i>
+                                        <span>Celery</span>
+                                    </a>
+                                </li>
+                                <li class="hover-up">
+                                    <a href="#">
+                                        <i class="fi-rs-cross me-10"></i>
+                                        <span>Spinach</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="shop-products">
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="shop-product-filter">
+                        <div class="found-result">
+                            <p>We found <strong>119</strong> items for you!</p>
+                        </div>
+                        <div class="product-filter">
+                            <div class="show-by"></div>
+                            <div class="sort-by"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-evenly">
+
+                <div class="col-xl-2 col-lg-1-5 col-md-4 col-sm-6 col-12">
+                    <div class="product-card">
+                        <div class="product-card-top">
+                            <a href="shop-product.html">
+                                <img src="assets/images/products/product-1-1.jpg" alt="product" class="default-img">
+                                <img src="assets/images/products/product-1-2.jpg" alt="product" class="hover-img">
+                            </a>
+
+                            <div class="product-badge">
+                                <span class="hot-badge">Hot</span>
+                            </div>
+
+                            <div class="product-action">
+                                <a href="#">
+                                    <i class="fi-rs-heart"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fi-rs-shuffle"></i>
+                                </a>
+                                <a href="shop-product.html">
+                                    <i class="fi-rs-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-card-bottom">
+                            <div class="product-category">
+                                <a href="#">Snack</a>
+                            </div>
+
+                            <h2>
+                                <a href="shop-product.html">Seeds of Change Organic Quinoe Naturel</a>
+                            </h2>
+
+                            <div class="product-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <span>(4.5)</span>
+                            </div>
+
+                            <div class="product-owner">
+                                <p>By <a href="#">NestFood</a></p>
+                            </div>
+
+                            <div class="product-sale-info">
+                                <div class="product-price">
+                                    <span>$28.85</span>
+                                    <s>$32.8</s>
+                                </div>
+                                <div class="add-cart">
+                                    <a href="#">
+                                        <i class="fi-rs-shopping-cart"></i>
+                                        <span>Add</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-2 col-lg-1-5 col-md-4 col-sm-6 col-12">
+                    <div class="product-card">
+                        <div class="product-card-top">
+                            <a href="shop-product.html">
+                                <img src="assets/images/products/product-2-1.jpg" alt="product" class="default-img">
+                                <img src="assets/images/products/product-2-2.jpg" alt="product" class="hover-img">
+                            </a>
+
+                            <div class="product-badge">
+                                <span class="sale-badge">Sale</span>
+                            </div>
+
+                            <div class="product-action">
+                                <a href="#">
+                                    <i class="fi-rs-heart"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fi-rs-shuffle"></i>
+                                </a>
+                                <a href="shop-product.html">
+                                    <i class="fi-rs-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-card-bottom">
+                            <div class="product-category">
+                                <a href="#">Hodo Foods</a>
+                            </div>
+
+                            <h2>
+                                <a href="shop-product.html">All Natural Italian-Style Chicken Meatballs</a>
+                            </h2>
+
+                            <div class="product-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <span>(4.0)</span>
+                            </div>
+
+                            <div class="product-owner">
+                                <p>By <a href="#">Stouffer</a></p>
+                            </div>
+
+                            <div class="product-sale-info">
+                                <div class="product-price">
+                                    <span>$52.85</span>
+                                    <s>$55.8</s>
+                                </div>
+                                <div class="add-cart">
+                                    <a href="#">
+                                        <i class="fi-rs-shopping-cart"></i>
+                                        <span>Add</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-2 col-lg-1-5 col-md-4 col-sm-6 col-12">
+                    <div class="product-card">
+                        <div class="product-card-top">
+                            <a href="shop-product.html">
+                                <img src="assets/images/products/product-3-1.jpg" alt="product" class="default-img">
+                                <img src="assets/images/products/product-3-2.jpg" alt="product" class="hover-img">
+                            </a>
+
+                            <div class="product-badge">
+                                <span class="new-badge">New</span>
+                            </div>
+
+                            <div class="product-action">
+                                <a href="#">
+                                    <i class="fi-rs-heart"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fi-rs-shuffle"></i>
+                                </a>
+                                <a href="shop-product.html">
+                                    <i class="fi-rs-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-card-bottom">
+                            <div class="product-category">
+                                <a href="#">Snack</a>
+                            </div>
+
+                            <h2>
+                                <a href="shop-product.html">Angie's Boomchickapop Sweet & Salty</a>
+                            </h2>
+
+                            <div class="product-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <span>(4.0)</span>
+                            </div>
+
+                            <div class="product-owner">
+                                <p>By <a href="#">StarKist</a></p>
+                            </div>
+
+                            <div class="product-sale-info">
+                                <div class="product-price">
+                                    <span>$48.85</span>
+                                    <s>$52.8</s>
+                                </div>
+                                <div class="add-cart">
+                                    <a href="#">
+                                        <i class="fi-rs-shopping-cart"></i>
+                                        <span>Add</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-2 col-lg-1-5 col-md-4 col-sm-6 col-12">
+                    <div class="product-card">
+                        <div class="product-card-top">
+                            <a href="shop-product.html">
+                                <img src="assets/images/products/product-4-1.jpg" alt="product" class="default-img">
+                                <img src="assets/images/products/product-4-2.jpg" alt="product" class="hover-img">
+                            </a>
+
+                            <div class="product-action">
+                                <a href="#">
+                                    <i class="fi-rs-heart"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fi-rs-shuffle"></i>
+                                </a>
+                                <a href="shop-product.html">
+                                    <i class="fi-rs-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-card-bottom">
+                            <div class="product-category">
+                                <a href="#">Vegetables</a>
+                            </div>
+
+                            <h2>
+                                <a href="shop-product.html">Foster Farms Takeout Crispy Classic</a>
+                            </h2>
+
+                            <div class="product-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+
+                                <span>(3.5)</span>
+                            </div>
+
+                            <div class="product-owner">
+                                <p>By <a href="#">NestFood</a></p>
+                            </div>
+
+                            <div class="product-sale-info">
+                                <div class="product-price">
+                                    <span>$17.85</span>
+                                    <s>$19.8</s>
+                                </div>
+                                <div class="add-cart">
+                                    <a href="#">
+                                        <i class="fi-rs-shopping-cart"></i>
+                                        <span>Add</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-2 col-lg-1-5 col-md-4 col-sm-6 col-12">
+                    <div class="product-card">
+                        <div class="product-card-top">
+                            <a href="shop-product.html">
+                                <img src="assets/images/products/product-5-1.jpg" alt="product" class="default-img">
+                                <img src="assets/images/products/product-5-2.jpg" alt="product" class="hover-img">
+                            </a>
+
+                            <div class="product-badge">
+                                <span class="off-badge">-14%</span>
+                            </div>
+
+                            <div class="product-action">
+                                <a href="#">
+                                    <i class="fi-rs-heart"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fi-rs-shuffle"></i>
+                                </a>
+                                <a href="shop-product.html">
+                                    <i class="fi-rs-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-card-bottom">
+                            <div class="product-category">
+                                <a href="#">Pet foods</a>
+                            </div>
+
+                            <h2>
+                                <a href="shop-product.html">Blue Diamond Almonds Lightly Naturel</a>
+                            </h2>
+
+                            <div class="product-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <span>(4.5)</span>
+                            </div>
+
+                            <div class="product-owner">
+                                <p>By <a href="#">NestFood</a></p>
+                            </div>
+
+                            <div class="product-sale-info">
+                                <div class="product-price">
+                                    <span>$23.85</span>
+                                    <s>$25.8</s>
+                                </div>
+                                <div class="add-cart">
+                                    <a href="#">
+                                        <i class="fi-rs-shopping-cart"></i>
+                                        <span>Add</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-2 col-lg-1-5 col-md-4 col-sm-6 col-12">
+                    <div class="product-card">
+                        <div class="product-card-top">
+                            <a href="shop-product.html">
+                                <img src="assets/images/products/product-6-1.jpg" alt="product" class="default-img">
+                                <img src="assets/images/products/product-6-2.jpg" alt="product" class="hover-img">
+                            </a>
+
+                            <div class="product-action">
+                                <a href="#">
+                                    <i class="fi-rs-heart"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fi-rs-shuffle"></i>
+                                </a>
+                                <a href="shop-product.html">
+                                    <i class="fi-rs-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-card-bottom">
+                            <div class="product-category">
+                                <a href="#">Hodo foods</a>
+                            </div>
+
+                            <h2>
+                                <a href="shop-product.html">Chobani Complete Vanilla Greek Bottle</a>
+                            </h2>
+
+                            <div class="product-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <span>(4.0)</span>
+                            </div>
+
+                            <div class="product-owner">
+                                <p>By <a href="#">NestFood</a></p>
+                            </div>
+
+                            <div class="product-sale-info">
+                                <div class="product-price">
+                                    <span>$54.85</span>
+                                    <s>$55.8</s>
+                                </div>
+                                <div class="add-cart">
+                                    <a href="#">
+                                        <i class="fi-rs-shopping-cart"></i>
+                                        <span>Add</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-2 col-lg-1-5 col-md-4 col-sm-6 col-12">
+                    <div class="product-card">
+                        <div class="product-card-top">
+                            <a href="shop-product.html">
+                                <img src="assets/images/products/product-7-1.jpg" alt="product" class="default-img">
+                                <img src="assets/images/products/product-7-2.jpg" alt="product" class="hover-img">
+                            </a>
+
+                            <div class="product-action">
+                                <a href="#">
+                                    <i class="fi-rs-heart"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fi-rs-shuffle"></i>
+                                </a>
+                                <a href="shop-product.html">
+                                    <i class="fi-rs-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-card-bottom">
+                            <div class="product-category">
+                                <a href="#">Meats</a>
+                            </div>
+
+                            <h2>
+                                <a href="shop-product.html">Canada Dry Ginger Ale - 2 L Bottle</a>
+                            </h2>
+
+                            <div class="product-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <span>(4.5)</span>
+                            </div>
+
+                            <div class="product-owner">
+                                <p>By <a href="#">NestFood</a></p>
+                            </div>
+
+                            <div class="product-sale-info">
+                                <div class="product-price">
+                                    <span>$32.85</span>
+                                    <s>$33.8</s>
+                                </div>
+                                <div class="add-cart">
+                                    <a href="#">
+                                        <i class="fi-rs-shopping-cart"></i>
+                                        <span>Add</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-2 col-lg-1-5 col-md-4 col-sm-6 col-12">
+                    <div class="product-card">
+                        <div class="product-card-top">
+                            <a href="shop-product.html">
+                                <img src="assets/images/products/product-8-1.jpg" alt="product" class="default-img">
+                                <img src="assets/images/products/product-8-2.jpg" alt="product" class="hover-img">
+                            </a>
+
+                            <div class="product-badge">
+                                <span class="sale-badge">Sale</span>
+                            </div>
+
+                            <div class="product-action">
+                                <a href="#">
+                                    <i class="fi-rs-heart"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fi-rs-shuffle"></i>
+                                </a>
+                                <a href="shop-product.html">
+                                    <i class="fi-rs-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-card-bottom">
+                            <div class="product-category">
+                                <a href="#">Snack</a>
+                            </div>
+
+                            <h2>
+                                <a href="shop-product.html">Encore Seafoods Stuffed Alaskan</a>
+                            </h2>
+
+                            <div class="product-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <span>(4.0)</span>
+                            </div>
+
+                            <div class="product-owner">
+                                <p>By <a href="#">NestFood</a></p>
+                            </div>
+
+                            <div class="product-sale-info">
+                                <div class="product-price">
+                                    <span>$35.85</span>
+                                    <s>$37.8</s>
+                                </div>
+                                <div class="add-cart">
+                                    <a href="#">
+                                        <i class="fi-rs-shopping-cart"></i>
+                                        <span>Add</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-2 col-lg-1-5 col-md-4 col-sm-6 col-12">
+                    <div class="product-card">
+                        <div class="product-card-top">
+                            <a href="shop-product.html">
+                                <img src="assets/images/products/product-9-1.jpg" alt="product" class="default-img">
+                                <img src="assets/images/products/product-9-2.jpg" alt="product" class="hover-img">
+                            </a>
+
+                            <div class="product-badge">
+                                <span class="hot-badge">Hot</span>
+                            </div>
+
+                            <div class="product-action">
+                                <a href="#">
+                                    <i class="fi-rs-heart"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fi-rs-shuffle"></i>
+                                </a>
+                                <a href="shop-product.html">
+                                    <i class="fi-rs-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-card-bottom">
+                            <div class="product-category">
+                                <a href="#">Coffes</a>
+                            </div>
+
+                            <h2>
+                                <a href="shop-product.html">Gorton's Beer Battered Fish Fillets</a>
+                            </h2>
+
+                            <div class="product-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span>(5.0)</span>
+                            </div>
+
+                            <div class="product-owner">
+                                <p>By <a href="#">Old El Paso</a></p>
+                            </div>
+
+                            <div class="product-sale-info">
+                                <div class="product-price">
+                                    <span>$23.85</span>
+                                    <s>$25.8</s>
+                                </div>
+                                <div class="add-cart">
+                                    <a href="#">
+                                        <i class="fi-rs-shopping-cart"></i>
+                                        <span>Add</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-2 col-lg-1-5 col-md-4 col-sm-6 col-12">
+                    <div class="product-card">
+                        <div class="product-card-top">
+                            <a href="shop-product.html">
+                                <img src="assets/images/products/product-10-1.jpg" alt="product" class="default-img">
+                                <img src="assets/images/products/product-10-2.jpg" alt="product" class="hover-img">
+                            </a>
+
+                            <div class="product-action">
+                                <a href="#">
+                                    <i class="fi-rs-heart"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fi-rs-shuffle"></i>
+                                </a>
+                                <a href="shop-product.html">
+                                    <i class="fi-rs-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-card-bottom">
+                            <div class="product-category">
+                                <a href="#">Cream</a>
+                            </div>
+
+                            <h2>
+                                <a href="shop-product.html">Haagen-Dazs Caramel Cone Ice Cream</a>
+                            </h2>
+
+                            <div class="product-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <span>(3.0)</span>
+                            </div>
+
+                            <div class="product-owner">
+                                <p>By <a href="#">Tyson</a></p>
+                            </div>
+
+                            <div class="product-sale-info">
+                                <div class="product-price">
+                                    <span>$22.85</span>
+                                    <s>$24.8</s>
+                                </div>
+                                <div class="add-cart">
+                                    <a href="#">
+                                        <i class="fi-rs-shopping-cart"></i>
+                                        <span>Add</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-2 col-lg-1-5 col-md-4 col-sm-6 col-12">
+                    <div class="product-card">
+                        <div class="product-card-top">
+                            <a href="shop-product.html">
+                                <img src="assets/images/products/product-1-1.jpg" alt="product" class="default-img">
+                                <img src="assets/images/products/product-1-2.jpg" alt="product" class="hover-img">
+                            </a>
+
+                            <div class="product-badge">
+                                <span class="hot-badge">Hot</span>
+                            </div>
+
+                            <div class="product-action">
+                                <a href="#">
+                                    <i class="fi-rs-heart"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fi-rs-shuffle"></i>
+                                </a>
+                                <a href="shop-product.html">
+                                    <i class="fi-rs-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-card-bottom">
+                            <div class="product-category">
+                                <a href="#">Snack</a>
+                            </div>
+
+                            <h2>
+                                <a href="shop-product.html">Seeds of Change Organic Quinoe Naturel</a>
+                            </h2>
+
+                            <div class="product-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <span>(4.5)</span>
+                            </div>
+
+                            <div class="product-owner">
+                                <p>By <a href="#">NestFood</a></p>
+                            </div>
+
+                            <div class="product-sale-info">
+                                <div class="product-price">
+                                    <span>$28.85</span>
+                                    <s>$32.8</s>
+                                </div>
+                                <div class="add-cart">
+                                    <a href="#">
+                                        <i class="fi-rs-shopping-cart"></i>
+                                        <span>Add</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-2 col-lg-1-5 col-md-4 col-sm-6 col-12">
+                    <div class="product-card">
+                        <div class="product-card-top">
+                            <a href="shop-product.html">
+                                <img src="assets/images/products/product-2-1.jpg" alt="product" class="default-img">
+                                <img src="assets/images/products/product-2-2.jpg" alt="product" class="hover-img">
+                            </a>
+
+                            <div class="product-badge">
+                                <span class="sale-badge">Sale</span>
+                            </div>
+
+                            <div class="product-action">
+                                <a href="#">
+                                    <i class="fi-rs-heart"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fi-rs-shuffle"></i>
+                                </a>
+                                <a href="shop-product.html">
+                                    <i class="fi-rs-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-card-bottom">
+                            <div class="product-category">
+                                <a href="#">Hodo Foods</a>
+                            </div>
+
+                            <h2>
+                                <a href="shop-product.html">All Natural Italian-Style Chicken Meatballs</a>
+                            </h2>
+
+                            <div class="product-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <span>(4.0)</span>
+                            </div>
+
+                            <div class="product-owner">
+                                <p>By <a href="#">Stouffer</a></p>
+                            </div>
+
+                            <div class="product-sale-info">
+                                <div class="product-price">
+                                    <span>$52.85</span>
+                                    <s>$55.8</s>
+                                </div>
+                                <div class="add-cart">
+                                    <a href="#">
+                                        <i class="fi-rs-shopping-cart"></i>
+                                        <span>Add</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-2 col-lg-1-5 col-md-4 col-sm-6 col-12">
+                    <div class="product-card">
+                        <div class="product-card-top">
+                            <a href="shop-product.html">
+                                <img src="assets/images/products/product-3-1.jpg" alt="product" class="default-img">
+                                <img src="assets/images/products/product-3-2.jpg" alt="product" class="hover-img">
+                            </a>
+
+                            <div class="product-badge">
+                                <span class="new-badge">New</span>
+                            </div>
+
+                            <div class="product-action">
+                                <a href="#">
+                                    <i class="fi-rs-heart"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fi-rs-shuffle"></i>
+                                </a>
+                                <a href="shop-product.html">
+                                    <i class="fi-rs-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-card-bottom">
+                            <div class="product-category">
+                                <a href="#">Snack</a>
+                            </div>
+
+                            <h2>
+                                <a href="shop-product.html">Angie's Boomchickapop Sweet & Salty</a>
+                            </h2>
+
+                            <div class="product-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <span>(4.0)</span>
+                            </div>
+
+                            <div class="product-owner">
+                                <p>By <a href="#">StarKist</a></p>
+                            </div>
+
+                            <div class="product-sale-info">
+                                <div class="product-price">
+                                    <span>$48.85</span>
+                                    <s>$52.8</s>
+                                </div>
+                                <div class="add-cart">
+                                    <a href="#">
+                                        <i class="fi-rs-shopping-cart"></i>
+                                        <span>Add</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-2 col-lg-1-5 col-md-4 col-sm-6 col-12">
+                    <div class="product-card">
+                        <div class="product-card-top">
+                            <a href="shop-product.html">
+                                <img src="assets/images/products/product-4-1.jpg" alt="product" class="default-img">
+                                <img src="assets/images/products/product-4-2.jpg" alt="product" class="hover-img">
+                            </a>
+
+                            <div class="product-action">
+                                <a href="#">
+                                    <i class="fi-rs-heart"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fi-rs-shuffle"></i>
+                                </a>
+                                <a href="shop-product.html">
+                                    <i class="fi-rs-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-card-bottom">
+                            <div class="product-category">
+                                <a href="#">Vegetables</a>
+                            </div>
+
+                            <h2>
+                                <a href="shop-product.html">Foster Farms Takeout Crispy Classic</a>
+                            </h2>
+
+                            <div class="product-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+
+                                <span>(3.5)</span>
+                            </div>
+
+                            <div class="product-owner">
+                                <p>By <a href="#">NestFood</a></p>
+                            </div>
+
+                            <div class="product-sale-info">
+                                <div class="product-price">
+                                    <span>$17.85</span>
+                                    <s>$19.8</s>
+                                </div>
+                                <div class="add-cart">
+                                    <a href="#">
+                                        <i class="fi-rs-shopping-cart"></i>
+                                        <span>Add</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-2 col-lg-1-5 col-md-4 col-sm-6 col-12">
+                    <div class="product-card">
+                        <div class="product-card-top">
+                            <a href="shop-product.html">
+                                <img src="assets/images/products/product-5-1.jpg" alt="product" class="default-img">
+                                <img src="assets/images/products/product-5-2.jpg" alt="product" class="hover-img">
+                            </a>
+
+                            <div class="product-badge">
+                                <span class="off-badge">-14%</span>
+                            </div>
+
+                            <div class="product-action">
+                                <a href="#">
+                                    <i class="fi-rs-heart"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fi-rs-shuffle"></i>
+                                </a>
+                                <a href="shop-product.html">
+                                    <i class="fi-rs-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-card-bottom">
+                            <div class="product-category">
+                                <a href="#">Pet foods</a>
+                            </div>
+
+                            <h2>
+                                <a href="shop-product.html">Blue Diamond Almonds Lightly Naturel</a>
+                            </h2>
+
+                            <div class="product-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <span>(4.5)</span>
+                            </div>
+
+                            <div class="product-owner">
+                                <p>By <a href="#">NestFood</a></p>
+                            </div>
+
+                            <div class="product-sale-info">
+                                <div class="product-price">
+                                    <span>$23.85</span>
+                                    <s>$25.8</s>
+                                </div>
+                                <div class="add-cart">
+                                    <a href="#">
+                                        <i class="fi-rs-shopping-cart"></i>
+                                        <span>Add</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-2 col-lg-1-5 col-md-4 col-sm-6 col-12">
+                    <div class="product-card">
+                        <div class="product-card-top">
+                            <a href="shop-product.html">
+                                <img src="assets/images/products/product-6-1.jpg" alt="product" class="default-img">
+                                <img src="assets/images/products/product-6-2.jpg" alt="product" class="hover-img">
+                            </a>
+
+                            <div class="product-action">
+                                <a href="#">
+                                    <i class="fi-rs-heart"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fi-rs-shuffle"></i>
+                                </a>
+                                <a href="shop-product.html">
+                                    <i class="fi-rs-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-card-bottom">
+                            <div class="product-category">
+                                <a href="#">Hodo foods</a>
+                            </div>
+
+                            <h2>
+                                <a href="shop-product.html">Chobani Complete Vanilla Greek Bottle</a>
+                            </h2>
+
+                            <div class="product-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <span>(4.0)</span>
+                            </div>
+
+                            <div class="product-owner">
+                                <p>By <a href="#">NestFood</a></p>
+                            </div>
+
+                            <div class="product-sale-info">
+                                <div class="product-price">
+                                    <span>$54.85</span>
+                                    <s>$55.8</s>
+                                </div>
+                                <div class="add-cart">
+                                    <a href="#">
+                                        <i class="fi-rs-shopping-cart"></i>
+                                        <span>Add</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-2 col-lg-1-5 col-md-4 col-sm-6 col-12">
+                    <div class="product-card">
+                        <div class="product-card-top">
+                            <a href="shop-product.html">
+                                <img src="assets/images/products/product-7-1.jpg" alt="product" class="default-img">
+                                <img src="assets/images/products/product-7-2.jpg" alt="product" class="hover-img">
+                            </a>
+
+                            <div class="product-action">
+                                <a href="#">
+                                    <i class="fi-rs-heart"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fi-rs-shuffle"></i>
+                                </a>
+                                <a href="shop-product.html">
+                                    <i class="fi-rs-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-card-bottom">
+                            <div class="product-category">
+                                <a href="#">Meats</a>
+                            </div>
+
+                            <h2>
+                                <a href="shop-product.html">Canada Dry Ginger Ale - 2 L Bottle</a>
+                            </h2>
+
+                            <div class="product-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <span>(4.5)</span>
+                            </div>
+
+                            <div class="product-owner">
+                                <p>By <a href="#">NestFood</a></p>
+                            </div>
+
+                            <div class="product-sale-info">
+                                <div class="product-price">
+                                    <span>$32.85</span>
+                                    <s>$33.8</s>
+                                </div>
+                                <div class="add-cart">
+                                    <a href="#">
+                                        <i class="fi-rs-shopping-cart"></i>
+                                        <span>Add</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-2 col-lg-1-5 col-md-4 col-sm-6 col-12">
+                    <div class="product-card">
+                        <div class="product-card-top">
+                            <a href="shop-product.html">
+                                <img src="assets/images/products/product-8-1.jpg" alt="product" class="default-img">
+                                <img src="assets/images/products/product-8-2.jpg" alt="product" class="hover-img">
+                            </a>
+
+                            <div class="product-badge">
+                                <span class="sale-badge">Sale</span>
+                            </div>
+
+                            <div class="product-action">
+                                <a href="#">
+                                    <i class="fi-rs-heart"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fi-rs-shuffle"></i>
+                                </a>
+                                <a href="shop-product.html">
+                                    <i class="fi-rs-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-card-bottom">
+                            <div class="product-category">
+                                <a href="#">Snack</a>
+                            </div>
+
+                            <h2>
+                                <a href="shop-product.html">Encore Seafoods Stuffed Alaskan</a>
+                            </h2>
+
+                            <div class="product-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <span>(4.0)</span>
+                            </div>
+
+                            <div class="product-owner">
+                                <p>By <a href="#">NestFood</a></p>
+                            </div>
+
+                            <div class="product-sale-info">
+                                <div class="product-price">
+                                    <span>$35.85</span>
+                                    <s>$37.8</s>
+                                </div>
+                                <div class="add-cart">
+                                    <a href="#">
+                                        <i class="fi-rs-shopping-cart"></i>
+                                        <span>Add</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-2 col-lg-1-5 col-md-4 col-sm-6 col-12">
+                    <div class="product-card">
+                        <div class="product-card-top">
+                            <a href="shop-product.html">
+                                <img src="assets/images/products/product-9-1.jpg" alt="product" class="default-img">
+                                <img src="assets/images/products/product-9-2.jpg" alt="product" class="hover-img">
+                            </a>
+
+                            <div class="product-badge">
+                                <span class="hot-badge">Hot</span>
+                            </div>
+
+                            <div class="product-action">
+                                <a href="#">
+                                    <i class="fi-rs-heart"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fi-rs-shuffle"></i>
+                                </a>
+                                <a href="shop-product.html">
+                                    <i class="fi-rs-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-card-bottom">
+                            <div class="product-category">
+                                <a href="#">Coffes</a>
+                            </div>
+
+                            <h2>
+                                <a href="shop-product.html">Gorton's Beer Battered Fish Fillets</a>
+                            </h2>
+
+                            <div class="product-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span>(5.0)</span>
+                            </div>
+
+                            <div class="product-owner">
+                                <p>By <a href="#">Old El Paso</a></p>
+                            </div>
+
+                            <div class="product-sale-info">
+                                <div class="product-price">
+                                    <span>$23.85</span>
+                                    <s>$25.8</s>
+                                </div>
+                                <div class="add-cart">
+                                    <a href="#">
+                                        <i class="fi-rs-shopping-cart"></i>
+                                        <span>Add</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-2 col-lg-1-5 col-md-4 col-sm-6 col-12">
+                    <div class="product-card">
+                        <div class="product-card-top">
+                            <a href="shop-product.html">
+                                <img src="assets/images/products/product-10-1.jpg" alt="product" class="default-img">
+                                <img src="assets/images/products/product-10-2.jpg" alt="product" class="hover-img">
+                            </a>
+
+                            <div class="product-action">
+                                <a href="#">
+                                    <i class="fi-rs-heart"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fi-rs-shuffle"></i>
+                                </a>
+                                <a href="shop-product.html">
+                                    <i class="fi-rs-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-card-bottom">
+                            <div class="product-category">
+                                <a href="#">Cream</a>
+                            </div>
+
+                            <h2>
+                                <a href="shop-product.html">Haagen-Dazs Caramel Cone Ice Cream</a>
+                            </h2>
+
+                            <div class="product-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <span>(3.0)</span>
+                            </div>
+
+                            <div class="product-owner">
+                                <p>By <a href="#">Tyson</a></p>
+                            </div>
+
+                            <div class="product-sale-info">
+                                <div class="product-price">
+                                    <span>$22.85</span>
+                                    <s>$24.8</s>
+                                </div>
+                                <div class="add-cart">
+                                    <a href="#">
+                                        <i class="fi-rs-shopping-cart"></i>
+                                        <span>Add</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pagination-section">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <ul class="page-numbers">
+                                <li class="page-number">
+                                    <a href="#" class="page-number-link">
+                                        <i class="fi-rs-arrow-small-left"></i>
+                                    </a>
+                                </li>
+                                <li class="page-number">
+                                    <a href="#" class="page-number-link">1</a>
+                                </li>
+                                <li class="page-number">
+                                    <a href="#" class="page-number-link current-page">2</a>
+                                </li>
+                                <li class="page-number">
+                                    <a href="#" class="page-number-link">3</a>
+                                </li>
+                                <li class="page-number">
+                                    <a href="#" class="page-number-link dots">...</a>
+                                </li>
+                                <li class="page-number">
+                                    <a href="#" class="page-number-link">6</a>
+                                </li>
+                                <li class="page-number">
+                                    <a href="#" class="page-number-link">
+                                        <i class="fi-rs-arrow-small-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="deals">
+        <div class="container-fluid">
+            <div class="section-header-2">
+                <h3>Deals of the day</h3>
+                <a href="#">
+                    <span>All deals</span>
+                    <i class="fi-rs-angle-right"></i>
+                </a>
+            </div>
+
+            <div class="row">
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="single-deal" data-aos="fade-up" data-aos-delay="100">
+                        <div class="deal-img">
+                            <a href="#">
+                                <img src="assets/images/banner/banner-5.png" alt="deal product">
+                            </a>
+                        </div>
+                        <div class="deal-info">
+                            <div class="deal-countdown">
+                                <span class="cnt-box">
+                                    <span class="cnt-amount hover-up">1111</span>
+                                    <span class="cnt-period">Days</span>
+                                </span>
+                                <span class="cnt-box">
+                                    <span class="cnt-amount hover-up">08</span>
+                                    <span class="cnt-period">Hours</span>
+                                </span>
+                                <span class="cnt-box">
+                                    <span class="cnt-amount hover-up">44</span>
+                                    <span class="cnt-period">Mins</span>
+                                </span>
+                                <span class="cnt-box">
+                                    <span class="cnt-amount hover-up">30</span>
+                                    <span class="cnt-period">Sec</span>
+                                </span>
+                            </div>
+                            <div class="deal-content">
+                                <h2>
+                                    <a href="#">Seeds of Change Organic Quinoa, Brown, & Red Rice</a>
+                                </h2>
+
+                                <div class="product-rate">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <span>(4.5)</span>
+                                </div>
+
+                                <div class="product-owner">
+                                    <p>By <a href="#">NestFood</a></p>
+                                </div>
+
+                                <div class="product-sale-info">
+                                    <div class="product-price">
+                                        <span>$32.85</span>
+                                        <s>$33.8</s>
+                                    </div>
+                                    <div class="add-cart">
+                                        <a href="#">
+                                            <i class="fi-rs-shopping-cart"></i>
+                                            <span>Add</span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="single-deal" data-aos="fade-up" data-aos-delay="200">
+                        <div class="deal-img">
+                            <a href="#">
+                                <img src="assets/images/banner/banner-6.png" alt="deal product">
+                            </a>
+                        </div>
+                        <div class="deal-info">
+                            <div class="deal-countdown">
+                                <span class="cnt-box">
+                                    <span class="cnt-amount hover-up">1111</span>
+                                    <span class="cnt-period">Days</span>
+                                </span>
+                                <span class="cnt-box">
+                                    <span class="cnt-amount hover-up">08</span>
+                                    <span class="cnt-period">Hours</span>
+                                </span>
+                                <span class="cnt-box">
+                                    <span class="cnt-amount hover-up">44</span>
+                                    <span class="cnt-period">Mins</span>
+                                </span>
+                                <span class="cnt-box">
+                                    <span class="cnt-amount hover-up">30</span>
+                                    <span class="cnt-period">Sec</span>
+                                </span>
+                            </div>
+                            <div class="deal-content">
+                                <h2>
+                                    <a href="#">Perdue Simply Smart Organics Gluten Free</a>
+                                </h2>
+
+                                <div class="product-rate">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <span>(4.5)</span>
+                                </div>
+
+                                <div class="product-owner">
+                                    <p>By <a href="#">Old El Paso</a></p>
+                                </div>
+
+                                <div class="product-sale-info">
+                                    <div class="product-price">
+                                        <span>$24.85</span>
+                                        <s>$26.8</s>
+                                    </div>
+                                    <div class="add-cart">
+                                        <a href="#">
+                                            <i class="fi-rs-shopping-cart"></i>
+                                            <span>Add</span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="single-deal" data-aos="fade-up" data-aos-delay="300">
+                        <div class="deal-img">
+                            <a href="#">
+                                <img src="assets/images/banner/banner-7.png" alt="deal product">
+                            </a>
+                        </div>
+                        <div class="deal-info">
+                            <div class="deal-countdown">
+                                <span class="cnt-box">
+                                    <span class="cnt-amount hover-up">1111</span>
+                                    <span class="cnt-period">Days</span>
+                                </span>
+                                <span class="cnt-box">
+                                    <span class="cnt-amount hover-up">08</span>
+                                    <span class="cnt-period">Hours</span>
+                                </span>
+                                <span class="cnt-box">
+                                    <span class="cnt-amount hover-up">44</span>
+                                    <span class="cnt-period">Mins</span>
+                                </span>
+                                <span class="cnt-box">
+                                    <span class="cnt-amount hover-up">30</span>
+                                    <span class="cnt-period">Sec</span>
+                                </span>
+                            </div>
+                            <div class="deal-content">
+                                <h2>
+                                    <a href="#">Signature Wood-Fired Mushroom and Caramelized</a>
+                                </h2>
+
+                                <div class="product-rate">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <span>(4.5)</span>
+                                </div>
+
+                                <div class="product-owner">
+                                    <p>By <a href="#">Progresso</a></p>
+                                </div>
+
+                                <div class="product-sale-info">
+                                    <div class="product-price">
+                                        <span>$12.85</span>
+                                        <s>$13.8</s>
+                                    </div>
+                                    <div class="add-cart">
+                                        <a href="#">
+                                            <i class="fi-rs-shopping-cart"></i>
+                                            <span>Add</span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="single-deal" data-aos="fade-up" data-aos-delay="400">
+                        <div class="deal-img">
+                            <a href="#">
+                                <img src="assets/images/banner/banner-8.png" alt="deal product">
+                            </a>
+                        </div>
+                        <div class="deal-info">
+                            <div class="deal-countdown">
+                                <span class="cnt-box">
+                                    <span class="cnt-amount hover-up">1111</span>
+                                    <span class="cnt-period">Days</span>
+                                </span>
+                                <span class="cnt-box">
+                                    <span class="cnt-amount hover-up">08</span>
+                                    <span class="cnt-period">Hours</span>
+                                </span>
+                                <span class="cnt-box">
+                                    <span class="cnt-amount hover-up">44</span>
+                                    <span class="cnt-period">Mins</span>
+                                </span>
+                                <span class="cnt-box">
+                                    <span class="cnt-amount hover-up">30</span>
+                                    <span class="cnt-period">Sec</span>
+                                </span>
+                            </div>
+                            <div class="deal-content">
+                                <h2>
+                                    <a href="#">Simply Lemonade with Raspberry Juice</a>
+                                </h2>
+
+                                <div class="product-rate">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <span>(4.5)</span>
+                                </div>
+
+                                <div class="product-owner">
+                                    <p>By <a href="#">Yoplait</a></p>
+                                </div>
+
+                                <div class="product-sale-info">
+                                    <div class="product-price">
+                                        <span>$15.85</span>
+                                        <s>$16.8</s>
+                                    </div>
+                                    <div class="add-cart">
+                                        <a href="#">
+                                            <i class="fi-rs-shopping-cart"></i>
+                                            <span>Add</span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="newsletter">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="newsletter-all">
+                        <div class="newsletter-content">
+                            <h2>Stay home & get your daily<br>needs from our shop</h2>
+                            <p>Start Your Daily Shopping with <span>Nest Mart</span></p>
+                            <form action="#">
+                                <input type="email" name="" id="" placeholder="Your emaill address">
+                                <button type="submit">Subscribe</button>
+                            </form>
+                        </div>
+                        <img src="assets/images/banner/banner-9.png" alt="newsletter">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="featured">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-lg-1-5 col-md-4 col-12 col-sm-6 mb-md-4 mb-xl-0">
+                    <div class="single-feature">
+                        <div class="feature-icon">
+                            <img src="assets/images/theme/icons/icon-1.svg" alt="icon">
+                        </div>
+                        <div class="feature-text">
+                            <h3>Best prices &amp; offers</h3>
+                            <p>Orders $50 or more</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-1-5 col-md-4 col-12 col-sm-6 mb-md-4 mb-xl-0">
+                    <div class="single-feature">
+                        <div class="feature-icon">
+                            <img src="assets/images/theme/icons/icon-2.svg" alt="icon">
+                        </div>
+                        <div class="feature-text">
+                            <h3>Free delivery</h3>
+                            <p>24/7 amazing services</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-1-5 col-md-4 col-12 col-sm-6 mb-md-4 mb-xl-0">
+                    <div class="single-feature">
+                        <div class="feature-icon">
+                            <img src="assets/images/theme/icons/icon-3.svg" alt="icon">
+                        </div>
+                        <div class="feature-text">
+                            <h3>Great daily deal</h3>
+                            <p>When you sign up</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-1-5 col-md-4 col-12 col-sm-6 mb-md-4 mb-xl-0">
+                    <div class="single-feature">
+                        <div class="feature-icon">
+                            <img src="assets/images/theme/icons/icon-4.svg" alt="icon">
+                        </div>
+                        <div class="feature-text">
+                            <h3>Wide assortment</h3>
+                            <p>Mega Discounts</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-1-5 col-md-4 col-12 col-sm-6 mb-md-4 mb-xl-0">
+                    <div class="single-feature">
+                        <div class="feature-icon">
+                            <img src="assets/images/theme/icons/icon-5.svg" alt="icon">
+                        </div>
+                        <div class="feature-text">
+                            <h3>Easy returns</h3>
+                            <p>Within 30 days</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-top">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6">
+                        <div class="footer-box" data-aos="fade-up" data-aos-delay="100">
+                            <div class="footer-logo">
+                                <a href="#">
+                                    <img src="assets/images/logo/logo.svg" alt="logo">
+                                </a>
+                                <p>Awesome grocery store website template</p>
+                            </div>
+                            <div class="footer-contact-info">
+                                <ul>
+                                    <li>
+                                        <img src="assets/images/theme/icons/icon-location.svg" alt="location">
+                                        <strong>Address:</strong>
+                                        <span>5171 W Campbell Ave undefined Kent, Utah 53127 United States</span>
+                                    </li>
+                                    <li>
+                                        <img src="assets/images/theme/icons/icon-contact.svg" alt="contact">
+                                        <strong>Call Us:</strong>
+                                        <span>(+91) - 540-025-124553</span>
+                                    </li>
+                                    <li>
+                                        <img src="assets/images/theme/icons/icon-email-2.svg" alt="email">
+                                        <strong>Email:</strong>
+                                        <span>sale@Nest.com</span>
+                                    </li>
+                                    <li>
+                                        <img src="assets/images/theme/icons/icon-clock.svg" alt="clock">
+                                        <strong>Hours:</strong>
+                                        <span>10:00 - 18:00, Mon - Sat</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6">
+                        <div class="footer-box" data-aos="fade-up" data-aos-delay="200">
+                            <h4 class="box-title">Company</h4>
+                            <ul class="footer-list">
+                                <li>
+                                    <a href="about.html">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Delivery Information</a>
+                                </li>
+                                <li>
+                                    <a href="#">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#">Terms & Conditions</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">Contact Us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Support Center</a>
+                                </li>
+                                <li>
+                                    <a href="#">Careers</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6">
+                        <div class="footer-box" data-aos="fade-up" data-aos-delay="300">
+                            <h4 class="box-title">Account</h4>
+                            <ul class="footer-list">
+                                <li>
+                                    <a href="#">Sign In</a>
+                                </li>
+                                <li>
+                                    <a href="cart.html">View Cart</a>
+                                </li>
+                                <li>
+                                    <a href="#">My Wishlist</a>
+                                </li>
+                                <li>
+                                    <a href="#">Track My Order</a>
+                                </li>
+                                <li>
+                                    <a href="#">Help Ticket</a>
+                                </li>
+                                <li>
+                                    <a href="#">Shipping Details</a>
+                                </li>
+                                <li>
+                                    <a href="#">Compare products</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6">
+                        <div class="footer-box" data-aos="fade-up" data-aos-delay="400">
+                            <h4 class="box-title">Corporate</h4>
+                            <ul class="footer-list">
+                                <li>
+                                    <a href="#">Become a Vendor</a>
+                                </li>
+                                <li>
+                                    <a href="#">Affiliate Program</a>
+                                </li>
+                                <li>
+                                    <a href="#">Farm Business</a>
+                                </li>
+                                <li>
+                                    <a href="#">Farm Careers</a>
+                                </li>
+                                <li>
+                                    <a href="#">Our Suppliers</a>
+                                </li>
+                                <li>
+                                    <a href="#">Accessibility</a>
+                                </li>
+                                <li>
+                                    <a href="#">Promotions</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6">
+                        <div class="footer-box" data-aos="fade-up" data-aos-delay="500">
+                            <h4 class="box-title">Popular</h4>
+                            <ul class="footer-list">
+                                <li>
+                                    <a href="#">Milk & Flavoured Milk</a>
+                                </li>
+                                <li>
+                                    <a href="#">Butter and Margarine</a>
+                                </li>
+                                <li>
+                                    <a href="#">Eggs Substitutes</a>
+                                </li>
+                                <li>
+                                    <a href="#">Marmalades</a>
+                                </li>
+                                <li>
+                                    <a href="#">Sour Cream and Dips</a>
+                                </li>
+                                <li>
+                                    <a href="#">Tea & Kombucha</a>
+                                </li>
+                                <li>
+                                    <a href="#">Cheese</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6">
+                        <div class="footer-box" data-aos="fade-up" data-aos-delay="600">
+                            <h4 class="box-title">Install App</h4>
+                            <p>From App Store or Google Play</p>
+                            <div class="download-app">
+                                <a href="#" class="hover-up">
+                                    <img src="assets/images/theme/app-store.jpg" alt="app store">
+                                </a>
+                                <a href="#" class="hover-up">
+                                    <img src="assets/images/theme/google-play.jpg" alt="google play">
+                                </a>
+                            </div>
+                            <p class="secure-gateway">Secured Payment Gateways</p>
+                            <img src="assets/images/theme/payment-method.png" alt="payment method"
+                                class="payment-method">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="fb-col">
+                            <p>&copy; <script>
+                                    document.write(new Date().getFullYear())
+                                </script>, <strong>Nest</strong> - HTML Ecommerce Template</p>
+                            <p>All rights reserved</p>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-6 text-center d-none d-xl-block">
+                        <div class="fb-col">
+                            <div class="hotline-numbers">
+                                <div class="hotline">
+                                    <div class="hotline-icon">
+                                        <img src="assets/images/theme/icons/phone-call.svg" alt="hotline">
+                                    </div>
+                                    <div class="hotline-call">
+                                        <p>1900 - 6666</p>
+                                        <span>24/7 Support Center</span>
+                                    </div>
+                                </div>
+                                <div class="hotline">
+                                    <div class="hotline-icon">
+                                        <img src="assets/images/theme/icons/phone-call.svg" alt="hotline">
+                                    </div>
+                                    <div class="hotline-call">
+                                        <p>1900 - 8888</p>
+                                        <span>24/7 Support Center</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-6 col-md-6 d-none d-md-block">
+                        <div class="fb-col">
+                            <div class="follow-discount">
+                                <div class="follow-us">
+                                    <h6>Follow Us</h6>
+                                    <ul class="social-icons">
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa-brands fa-facebook-f"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa-brands fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa-brands fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa-brands fa-pinterest-p"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa-brands fa-youtube"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <p>Up to 15% discount on your first subscribe</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to top button -->
+    <a href="javascript:void(0)" id="scrollToTop" class="hover-up">
+        <i class="icofont-arrow-up"></i>
+    </a>
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <!-- AOS JS -->
+    <script src="assets/aos-master/dist/aos.js"></script>
+    <!-- Slick Plugin JS -->
+    <!-- <script src="assets/slick/slick/slick.min.js"></script> -->
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
